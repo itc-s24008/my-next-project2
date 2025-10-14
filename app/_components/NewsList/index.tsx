@@ -18,7 +18,6 @@ export default function NewsList({ news }: Props) {
     <ul>
       {news.map((article) => (
         <li key={article.id} className={styles.list}>
-          {/* TODO:別の章で、リンクと正式な画像に差し替えます */}
           <Link href={`/news/${article.id}`} className={styles.link}>
             <Image
               className={styles.image}
@@ -40,3 +39,4 @@ export default function NewsList({ news }: Props) {
     </ul>
   );
 }
+
